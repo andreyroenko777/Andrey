@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+n = int(input())
+if n < a * b and ((n % a == 0) or (n % b == 0)):
+    print('YES')
+else:
+    print('NO')
