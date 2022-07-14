@@ -1,0 +1,24 @@
+def zvet(x, y):
+    if x % 2 != 0:
+        if y % 2 != 0:
+            return "Белый"
+        else:
+            return 'Черный'
+    else:
+        if y % 2 != 0:
+            return "Черный"
+        else:
+            return 'Белый'
+        
+print('Введите 1-ое число')
+a = int(input())
+print('Введите 2-ое число')
+b = int(input())
+print('Введите 3-е число')
+c = int(input())
+print('Введите 4-ое число')
+d = int(input())
+if zvet(a, b) == zvet (c, d):
+    print('Yes')
+else:
+    print('No')
