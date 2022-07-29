@@ -1,0 +1,11 @@
+def fkt(a):
+    fk = 1
+    for i in range(1, a + 1):
+        fk *= i
+    return fk
+
+x = int(input())
+summ = 0
+for j in range(1, x + 1):
+    summ += fkt(j)
+print(summ)
