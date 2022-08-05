@@ -1,0 +1,7 @@
+x = input()
+indexh = x.find('h')
+s = str(x[indexh + 1:])
+indexhr = s.rfind('h')
+sl = str(s[:indexhr])
+sl = sl.replace('h', 'H')
+print(str(x[:indexh + 1] + sl + str(s[indexhr:])))
