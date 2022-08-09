@@ -1,0 +1,19 @@
+q = input('Введите количество кубиков у Анны и у Бориса через пробел: ').split()
+ann = int(q[0])
+anncub = set()
+bor = int(q[1])
+borcub = set()
+print('Введите номера кубиков Анны (каждый с новой строки)')
+for z in range(ann):
+    a = int(input())
+    anncub.add(a)
+print('Введите номера кубиков Бориса (каждый с новой строки)')
+for j in range(bor):
+    b = int(input())
+    borcub.add(b)
+oba = anncub & borcub
+tolkann = anncub - borcub
+tolkbor = borcub - anncub
+print(oba)
+print(tolkann)
+print(tolkbor)
