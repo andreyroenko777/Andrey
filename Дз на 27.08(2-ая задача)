@@ -1,0 +1,9 @@
+s=[]
+z = input()
+a = [int(z) for z in z.split()]
+print(a)
+k = int(input())
+for i in range(len(a)):
+    if i != k:
+        s.append(a[i])
+print(s)
