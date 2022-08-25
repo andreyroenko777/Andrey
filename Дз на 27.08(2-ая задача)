@@ -1,0 +1,11 @@
+a = input()
+j = [int(a) for a in a.split()]
+mi = 0
+ma = 0
+for i in range(len(j)):
+    if j[i] == max(j):
+        ma = i
+    if j[i] == min(j):
+        mi = i
+j[ma], j[mi] = j[mi], j[ma]
+print(j)
